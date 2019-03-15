@@ -1,0 +1,41 @@
+.holder {
+	padding: 0 20px;
+
+	header {
+		padding: 10px;
+		h1 {
+			font-weight: 300;
+		}
+	}
+
+	main.buckets-holder {
+		display: flex;
+		overflow-x: auto;
+		padding: 10px;
+		kb-bucket {
+			display: block;
+			margin-right: 350px;
+			flex-shrink: 0;
+			position: relative;
+			@include renderBorder();
+		}
+	}
+
+	button.fab {
+		border-radius: 50%;
+		height: 60px;
+		width: 60px;
+		background: $gradient-blush;
+		color: white;
+		font-size: 44px;
+		font-weight: 300;
+		padding: 0;
+		line-height: 0;
+		padding-left: 3px;
+		padding-bottom: 7px;
+		position: fixed;
+		bottom: 5vh;
+		right: 5vh;
+		box-shadow: 0 0px 12px rgba(0, 0, 0, 0.2);
+	}
+}
